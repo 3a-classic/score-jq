@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/include.js"></script>
+<script type="text/javascript">
+	writeHead("./");
+</script>
+</head>
+<body>
+	<div data-role="page" id="holeInformationRegistration_Page">
+		<div data-role="header">
+			<a href="JavaScript:history.go(-1)" data-rel="back">戻る</a>
+			<h2 id="title">
+				<a href="javascript:window.location='/';">3A Classic</a>
+			</h2>
+			<a href="./adminTop.html" class="admin">管理者</a>
+		</div>
+		<div data-role="content">
+			<script src="../js/holeInformationRegistration.js"></script>
+
+			<table id="holeInformationRegistration_ResultArea">
+				<tr>
+					<th>ホールNo</th>
+					<td><input type="text" id="hole"></input></td>
+				</tr>
+				<tr>
+					<th>パー</th>
+					<td><input type="text" id="par"></input></td>
+				</tr>
+				<tr>
+					<th>ヤード</th>
+					<td><input type="text" id="yard"></input></td>
+				</tr>
+				<tr>
+					<th>画像URL</th>
+					<td><input type="text" id="holeURL"></input></td>
+				</tr>
+				<tr>
+					<th>ドライバーコンテスト</th>
+					<td><select data-role="flipswitch" data-min="false" id="driverContest">
+							<option value="off" selected>非対象</option>
+							<option value="on">対象</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>ニアピン賞</th>
+					<td><select data-role="flipswitch" id="nearPinContest">
+							<option value="off" selected>非対象</option>
+							<option value="on">対象</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>集計対象</th>
+					<td><select data-role="flipswitch" id="ignoreHole">
+							<option value="off">非対象</option>
+							<option value="on" selected>対象</option>
+					</select></td>
+				</tr>
+
+			</table>
+
+			<div class="align-center-two-button">
+				<button class="ui-btn ui-btn-icon-left ui-icon-arrow-l"
+					id="prev-btn">前のホール</button>
+				<button class="ui-btn ui-btn-icon-right ui-icon-arrow-r"
+					id="next-btn">次のホール</button>
+			</div>
+			<div class="align-center-two-button">
+				<button class="ui-btn ui-btn-icon-left ui-icon-plus" id="new-btn">
+					新規作成</button>
+				<button class="ui-btn ui-btn-icon-left ui-icon-minus" id="del-btn">
+					削除</button>
+			</div>
+			<button class="ui-btn exec-btn"
+				id="holeInformationRegistration_execute">登録</button>
+		</div>
+		<div data-role="footer"></div>
+	</div>
+</body>
+</html>

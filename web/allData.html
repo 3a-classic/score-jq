@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<meta charset="utf-8">
+<title>サンエークラシック</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script src="../js/common.js"></script>
+<script src="../js/config.js"></script>
+<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<link rel="stylesheet"
+  href="../css/custom.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+<script src="../js/utils.js"></script>
+</head>
+<body>
+	<div data-role="page" id="allData_Page">
+		<div data-role="panel" id="navgationMenu" data-theme="b" data-position="right">
+		<ul data-role="listview">
+			<li data-role="list-divider">ナビゲーションメニュー</li>
+			<li><a href="/index.html" data-ajax="false">TOP</a></li>
+			<li><a href="/web/scoreViewSheet.html" data-ajax="false">スコア一覧</a></li>
+			<li><a href="/web/leadersBoard.html" data-ajax="false">リーダーボード</a></li>
+			<li><a href="/web/timeLine.html" data-ajax="false">タイムライン</a></li>
+			<li><a href="/web/gallery.html" data-ajax="false">ギャラリー</a></li>
+			<li><a href="/web/allData.html" data-ajax="false" class="admin">集計ページ</a></li>
+		</ul>
+		</div>
+		<div data-id="common_header" data-role="header" data-position="fixed" data-theme="b">
+			<a href="JavaScript:history.go(-1)" data-rel="back" class="ui-btn ui-btn-a">戻る</a>
+			<h2><a href="/index.html" id="toTop" >3A-classic</a></h2>
+			<a href="#navgationMenu" class="ui-btn ui-icon-bars ui-btn-icon-right ui-corner-all">メニュー</a>
+		</div>
+		<div data-role="content">
+			<script src="../js/allData.js"></script>
+			<div class="scroll">
+				<table id="allData_ResultArea" overflow-x:scroll></table>
+			</div>
+		</div>
+
+		<div data-role="footer" data-position="fixed" data-theme="b" class="ui-bar">
+			<a href="./scoreViewSheet.html" class="ui-btn ui-btn-a" data-ajax="false">スコアシート</a>
+			<a href="./timeLine.html" id="toTimeLine" class="ui-btn ui-btn-a" data-ajax="false">タイムライン</a>
+			<a href="./leadersBoard.html" id="toLidersBoard" class="ui-btn ui-btn-a" data-ajax="false">リーダーズボード</a>
+		</div>
+	</div>
+</body>
+</html>

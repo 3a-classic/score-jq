@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/include.js"></script>
+<script type="text/javascript">
+	writeHead("./");
+</script>
+</head>
+<body>
+	<div data-role="page" id="timeLine_Page">
+		<div data-id="common_header" data-role="header" data-position="fixed" data-theme="b">
+
+				<a href="JavaScript:history.go(-1)" data-rel="back"
+					class="ui-btn ui-btn-a">戻る</a> <h2><a href="javascript:window.location='/';"
+					id="toTop" >3A-classic</a></h2> <a
+					href="../web/adminTop.html" class="admin" class="ui-btn ui-btn-a">管理者</a>
+		</div>
+
+		<div role="main" class="ui-content">
+			<script src="../js/timeLine.js"></script>
+			<div id="timeLine_ResultArea"></div>
+		</div>
+
+		<div data-role="footer" data-position="fixed" data-theme="b" class="ui-bar">
+			<a href="./holeInformation.html" class="ui-btn ui-btn-a">ホール情報</a>
+			<a href="./timeLine.html" id="toTimeLine" class="ui-btn ui-btn-a">タイムライン<div class="timeLineFooter"></div></a>
+			<a href="./leadersBoard.html" id="toLidersBoard" class="ui-btn ui-btn-a">リーダーズボード</a>
+		</div>
+</body>
+</html>

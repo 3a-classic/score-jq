@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>サンエークラシック</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<script src="../js/config.js"></script>
+  <link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<link rel="stylesheet"
+  href="../css/custom.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+<script src="../js/jquery.color.utils-0.1.0.js"></script>
+<script src="../js/utils.js"></script>
+</head>
+<body>
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+  <div data-role="page" id="facebookLogin_Page">
+    <div data-role="content">
+		<div data-id="common_header" data-role="header" data-position="fixed" data-theme="b">
+			 <h2><a href="/" id="toTop" >3A-classic</a></h2>
+		</div>
+		<script src="../js/facebookLogin.js"></script>
+		<div id="login">
+			<img src="http://www.ticketport.co.jp/kichizyozi/wp-content/uploads/sites/6/2014/10/golfkaitori.jpg" class="pageFullWidth">
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" id="loginButton"></fb:login-button>
+		</div>
+		<div id="status"></div>
+
+	</div>
+	<script type="text/javascript">
+		// fix iOS Chrome
+		if(navigator.userAgent.match('CriOS') ){
+			$('#login').css('display','none');
+		}
+	</script>
+</body>
+</html>

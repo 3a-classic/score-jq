@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/include.js"></script>
+<script type="text/javascript">
+	writeHead("./");
+</script>
+</head>
+<body>
+
+	<div data-role="page" id="applyEntrySheet_Page">
+
+		<div data-role="panel" id="navgationMenu" data-theme="b" data-position="right">
+		<ul data-role="listview">
+			<li data-role="list-divider">ナビゲーションメニュー</li>
+			<li><a href="/index.html" data-ajax="false">TOP</a></li>
+			<li><a href="/web/scoreViewSheet.html" data-ajax="false">スコア一覧</a></li>
+			<li><a href="/web/leadersBoard.html" data-ajax="false">リーダーボード</a></li>
+			<li><a href="/web/timeLine.html" data-ajax="false">タイムライン</a></li>
+			<li><a href="/web/gallery.html" data-ajax="false">ギャラリー</a></li>
+			<li><a href="/web/allData.html" data-ajax="false" class="admin">集計ページ</a></li>
+		</ul>
+		</div>
+		<div data-id="common_header" data-role="header" data-position="fixed" data-theme="b">
+			<a href="JavaScript:history.go(-1)" data-rel="back" class="ui-btn ui-btn-a">戻る</a>
+			<h2><a href="/index.html" id="toTop" >3A-classic</a></h2>
+			<a href="#navgationMenu" class="ui-btn ui-icon-bars ui-btn-icon-right ui-corner-all">メニュー</a>
+		</div>
+
+		<div data-role="content">
+			<script src="../js/applyEntrySheet.js"></script>
+			<script type="text/javascript"
+				src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
+
+
+			<div class="ui-grid-a" id="applyEntrySheet_ResultArea">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b">
+					<button class="grid-d-button" id="apply">申請数</button>
+				</div>
+				<div class="ui-block-a">
+					<button class="grid-d-button line3Button" id="player1"></button>
+				</div>
+				<div class="ui-block-b">
+					<input type="text" id="1-apply" data-role="spinbox"
+						data-type="range" name="spin" id="spin" value="" min="0"
+						max="250" /></input>
+				</div>
+				<div class="ui-block-a">
+					<button class="grid-d-button line3Button" id="player2"></button>
+				</div>
+				<div class="ui-block-b">
+					<input type="text" id="2-apply" data-role="spinbox"
+						data-type="range" name="spin" id="spin" value="" min="0"
+						max="250" /></input>
+				</div>
+				<div class="ui-block-a">
+					<button class="grid-d-button line3Button" id="player3"></button>
+				</div>
+				<div class="ui-block-b">
+					<input type="text" id="3-apply" data-role="spinbox"
+						data-type="range" name="spin" id="spin" value="" min="0"
+						max="250" /></input>
+				</div>
+				<div class="ui-block-a">
+					<button class="grid-d-button line3Button" id="player4"></button>
+				</div>
+				<div class="ui-block-b">
+					<input type="text" id="4-apply" data-role="spinbox"
+						data-type="range" name="spin" id="spin" value="" min="0"
+						max="250" /></input>
+				</div>
+
+			</div>
+			<button class="exec-btn" id="applyEntrySheet_execute">確定</button>
+
+		</div>
+		<div data-role="footer"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/include.js"></script>
+<script type="text/javascript">
+	writeHead("./");
+</script>
+</head>
+<body>
+	<div id="popupArea"></div>
+	<div data-role="page" id="gallery_Page">
+
+		<div data-role="panel" id="navgationMenu" data-theme="b" data-position="right">
+		<ul data-role="listview">
+			<li data-role="list-divider">ナビゲーションメニュー</li>
+			<li><a href="/index.html" data-ajax="false">TOP</a></li>
+			<li><a href="/web/scoreViewSheet.html" data-ajax="false">スコア一覧</a></li>
+			<li><a href="/web/leadersBoard.html" data-ajax="false">リーダーボード</a></li>
+			<li><a href="/web/timeLine.html" data-ajax="false">タイムライン</a></li>
+			<li><a href="/web/gallery.html" data-ajax="false">ギャラリー</a></li>
+			<li><a href="/web/allData.html" data-ajax="false" class="admin">集計ページ</a></li>
+		</ul>
+		</div>
+		<div data-id="common_header" data-role="header" data-position="fixed" data-theme="b">
+			<a href="JavaScript:history.go(-1)" data-rel="back" class="ui-btn ui-btn-a">戻る</a>
+			<h2><a href="/index.html" id="toTop" >3A-classic</a></h2>
+			<a href="#navgationMenu" class="ui-btn ui-icon-bars ui-btn-icon-right ui-corner-all">メニュー</a>
+		</div>
+
+		<div role="main" class="ui-content">
+			<script src="//sdk.amazonaws.com/js/aws-sdk-2.1.34.min.js"></script>
+			<script src="../js/gallery.js"></script>
+			<div id="gallerycontent">
+			</div>
+		</div>
+
+		<div data-role="footer" data-position="fixed" data-theme="b" class="ui-bar">
+			<a href="./scoreViewSheet.html" class="ui-btn ui-btn-a"  data-ajax="false">スコアシート</a>
+			<a href="./timeLine.html" id="toTimeLine" class="ui-btn ui-btn-a"  data-ajax="false">タイムライン<div class="timeLineFooter"></div></a>
+			<a href="./leadersBoard.html" id="toLidersBoard" class="ui-btn ui-btn-a"  data-ajax="false">リーダーズボード</a>
+		</div>
+
+
+</body>
+</html>

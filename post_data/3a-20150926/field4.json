@@ -1,0 +1,9 @@
+{
+  "hole": 4,
+  "par": 4,
+  "yard": 320,
+"image": "http://d-vintage.com/course/img/course_04.jpg",
+  "ignore": false,
+  "drivingContest": false,
+  "nearPin": false
+}

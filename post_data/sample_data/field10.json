@@ -1,0 +1,9 @@
+{
+  "hole": 10,
+  "par": 3,
+  "yard": 300,
+"image": "http://+++",
+  "ignore": false,
+  "drivingContest": false,
+  "nearPin": false
+}

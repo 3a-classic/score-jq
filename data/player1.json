@@ -1,0 +1,54 @@
+{
+  "name": "name1",
+  "team": "A",
+  "apply": "120",
+  "editable": "true",
+  "score": {
+    "1": {
+      "total": 5,
+      "stroke": 3,
+      "putt": 2
+    },
+    "2": {
+      "total": 5,
+      "stroke": 3,
+      "putt": 2
+    },
+    "3": {
+      "total": 5,
+      "stroke": 3,
+      "putt": 2
+    },
+    "4": {
+      "total": 5,
+      "stroke": 3,
+      "putt": 2
+    },
+    "5": {
+      "total": 5,
+      "stroke": 3,
+      "putt": 2
+    },
+    "6": {
+      "total": 5,
+      "stroke": 3,
+      "putt": 2
+    },
+    "7": {
+      "total": 5,
+      "stroke": 3,
+      "putt": 2
+    },
+    "8": {
+      "total": 5,
+      "stroke": 3,
+      "putt": 2
+    },
+    "9": {
+      "total": 5,
+      "stroke": 3,
+      "putt  ": 2
+    },
+    "sum": 120
+  }
+}
